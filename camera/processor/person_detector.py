@@ -30,6 +30,7 @@ def upload():
         'channels': [SLACK_CHANNEL],
     }
     r = requests.post(SLACK_URL, params=payload, files=image)
+    requests.post(SLACK_URL, params=payload, files=image)
     print(r.status_code)
 
 
