@@ -13,9 +13,9 @@ import requests
 
 # slackとの接続(ちょっと怪しい)
 try:
-    SLACK_URL = os.environ['isaax-handson-1027.slack.com']
-    SLACK_TOKEN = os.environ['xoxp-460523843457-461032257667-462003431763-7555e10cc7ce4e9c1d89bf159beefa33']
-    SLACK_CHANNEL = os.environ['table-1']
+    SLACK_URL = os.environ['SLACK_URL']
+    SLACK_TOKEN = os.environ['SLACK_TOKEN']
+    SLACK_CHANNEL = os.environ['SLACK_CHANNEL']
 except KeyError as e:
     sys.exit('Couldn\'t find env: {}'.format(e))
 
